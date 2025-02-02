@@ -1,0 +1,11 @@
+.projets_pagination-bullet-active {
+  opacity: 1;
+}
+
+.galerie_asset-wrapper .galerie_text-wrapper {
+  transition: opacity 0.2s ease-out;
+}
+
+.galerie_asset-wrapper:hover .galerie_text-wrapper {
+  opacity: 1;
+}
