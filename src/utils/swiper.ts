@@ -13,15 +13,26 @@ export function swiperProjects() {
       autoHeight: true,
       centeredSlides: true,
       spaceBetween: 0,
-      speed: 500,
+      speed: 750,
+      // mousewheel: {
+      //   forceToAxis: true,
+      // },
       mousewheel: {
         forceToAxis: true,
+        sensitivity: 0,
+        // releaseOnEdges: true,
+        // thresholdDelta: 50,
+        // thresholdTime: 100,
       },
       pagination: {
         el: '.projets_pagination',
         clickable: true,
         bulletClass: 'projets_pagination-bullet',
         bulletActiveClass: 'projets_pagination-bullet-active',
+      },
+      navigation: {
+        nextEl: container.querySelector('.projets_navigation-right') as HTMLElement,
+        prevEl: container.querySelector('.projets_navigation-left') as HTMLElement,
       },
     });
   });
